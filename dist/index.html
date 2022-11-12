@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header>
+      <div class="date-container">
+        <div class="date__day">12</div>
+        <div class="date__month-year-box">
+          <span class="date__month">Nov</span>
+          <span class="date__year">2022</span>
+        </div>
+      </div>
+      <div class="weekday">Quinta-feira</div>
+    </header>
+
+    <main>
+      <div class="container">
+        <ul class="todo-list">
+          <li class="todo-element">
+            <div class="todo-title">Terminar o projeto</div>
+            <div class="todo-btns-box">
+              <button class="btn todo-btn--finish-task">
+                <svg
+                  class="todo-btn--finish-task-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+              <button class="btn todo-btn--delete-task">
+                <svg
+                  class="todo-btn--delete-task-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <div class="todo-form-overlay">
+            <form>
+              <input
+                class="todo-form__input"
+                type="text"
+                placeholder="Adicione uma nova tarefa!"
+              />
+              <button class="btn todo-form__add-task-btn">
+                <svg
+                  class="todo-form__add-task-btn-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </ul>
+        <!-- <button class="add-todo-btn">+</button> -->
+      </div>
+    </main>
+  </body>
+</html>
