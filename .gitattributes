@@ -1,0 +1,3 @@
+# Overrides Linguist default behaviour
+dist/* linguist-documentation=false
+dist/* linguist-vendored=false

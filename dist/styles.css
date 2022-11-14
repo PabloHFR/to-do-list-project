@@ -23,7 +23,7 @@ body {
   font-weight: 400;
   color: #767d7d;
   background-color: #fff;
-  max-width: 80rem; /* VER NO CURSO ADVANCED CSS COMO QUE ELE DEIXOU A MARGEM FIXA */
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -63,7 +63,6 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  /* color: #3b3e3e; */
 }
 
 .date__year {
@@ -90,7 +89,6 @@ MAIN CONTENT STYLES
   min-height: 15rem;
   max-width: 80rem;
   position: relative;
-  /* box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1); */
   border-radius: 4px;
 }
 
@@ -154,7 +152,6 @@ MAIN CONTENT STYLES
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 24px; */
 }
 
 .todo-form__input,
@@ -196,19 +193,3 @@ MAIN CONTENT STYLES
   opacity: 100%;
   stroke: #48cc94;
 }
-
-/* .add-todo-btn {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  text-align: center;
-
-  height: 10rem;
-  width: 10rem;
-  border: solid 2px transparent;
-  border-radius: 100px;
-  background-color: #50e3a4;
-
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-} */
