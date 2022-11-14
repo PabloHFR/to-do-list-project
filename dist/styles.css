@@ -136,6 +136,11 @@ MAIN CONTENT STYLES
   transition: all 0.1s;
 }
 
+.todo-btn--finish-task-icon:active,
+.todo-btn--delete-task-icon:active {
+  pointer-events: none;
+}
+
 .todo-btn--finish-task-icon:hover,
 .todo-btn--delete-task-icon:hover {
   opacity: 40%;
@@ -179,6 +184,16 @@ MAIN CONTENT STYLES
 
 .todo-form__add-task-btn-icon:hover {
   opacity: 100%;
+}
+
+.finished-todo {
+  opacity: 50%;
+  text-decoration: line-through;
+}
+
+.finished-todo-icon {
+  opacity: 100%;
+  stroke: #48cc94;
 }
 
 /* .add-todo-btn {
