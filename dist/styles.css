@@ -134,7 +134,10 @@ MAIN CONTENT STYLES
   width: 3.2rem;
   opacity: 20%;
   transition: all 0.1s;
+}
 
+.todo-btn--finish-task-icon:active,
+.todo-btn--delete-task-icon:active {
   pointer-events: none;
 }
 
