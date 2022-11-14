@@ -183,6 +183,16 @@ MAIN CONTENT STYLES
   opacity: 100%;
 }
 
+.finished-todo {
+  opacity: 50%;
+  text-decoration: line-through;
+}
+
+.finished-todo-icon {
+  opacity: 100%;
+  stroke: #48cc94;
+}
+
 /* .add-todo-btn {
   position: absolute;
   bottom: 0%;

@@ -102,6 +102,15 @@ function deleteTodo(event) {
   }
 }
 
+function finishTodo(event) {
+  const item = event.target;
+
+  if (item.closest("button")?.classList[1] === "todo-btn--finish-task") {
+    item.children[0].classList.add("finished-todo-icon");
+    item.parentElement.parentElement.children[0].classList.add("finished-todo");
+  }
+}
+
 // Event Listeners
 todoFormInputElement.addEventListener("keypress", function (event) {
   if (event.key === "enter") {
@@ -110,3 +119,4 @@ todoFormInputElement.addEventListener("keypress", function (event) {
 });
 addTaskFormButtonElement.addEventListener("click", addTodoElement);
 todoListElement.addEventListener("click", deleteTodo);
+todoListElement.addEventListener("click", finishTodo);
