@@ -106,8 +106,10 @@ function finishTodo(event) {
   const item = event.target;
 
   if (item.closest("button")?.classList[1] === "todo-btn--finish-task") {
-    item.children[0].classList.add("finished-todo-icon");
-    item.parentElement.parentElement.children[0].classList.add("finished-todo");
+    item.children[0].classList.toggle("finished-todo-icon");
+    item.parentElement.parentElement.children[0].classList.toggle(
+      "finished-todo"
+    );
   }
 }
 
