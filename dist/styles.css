@@ -98,7 +98,7 @@ MAIN CONTENT STYLES
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .todo-element {
@@ -146,10 +146,11 @@ MAIN CONTENT STYLES
   opacity: 40%;
 }
 
-.todo-form-overlay {
+.todo-form {
+  padding: 0 3rem;
 }
 
-.todo-form-overlay form {
+.todo-form form {
   display: flex;
   align-items: center;
   justify-content: center;
