@@ -1,7 +1,11 @@
 // Selectors
+const dateDayElement = document.querySelector(".date__day");
+const weekdayElement = document.querySelector(".weekday");
+const dateMonthElement = document.querySelector(".date__month");
+const dateYearElement = document.querySelector(".date__year");
+
 const todoListElement = document.querySelector(".todo-list");
 const todoElement = document.querySelector(".todo-element");
-
 const todoFormInputElement = document.querySelector(".todo-form__input");
 
 const finishTaskButtonElement = document.querySelector(
@@ -10,12 +14,34 @@ const finishTaskButtonElement = document.querySelector(
 const deleteTaskButtonElement = document.querySelector(
   ".todo-btn--delete-task"
 );
-
 const addTaskFormButtonElement = document.querySelector(
   ".todo-form__add-task-btn"
 );
 
+// Variables
+let day, weekday, month, year;
+
 // Functions
+getDate();
+updateDate();
+
+function getDate() {
+  const date = new Date();
+  [day, weekday, month, year] = [
+    date.getDate(),
+    date.toLocaleString("pt-BR", { weekday: "long" }),
+    date.toLocaleString("en-US", { month: "short" }),
+    date.getFullYear(),
+  ];
+}
+
+function updateDate() {
+  dateDayElement.textContent = day;
+  weekdayElement.textContent = weekday;
+  dateMonthElement.textContent = month;
+  dateYearElement.textContent = year;
+}
+
 function addTodoElement(event) {
   event.preventDefault();
 
