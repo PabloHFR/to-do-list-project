@@ -93,6 +93,15 @@ function addTodoElement(event) {
   }
 }
 
+function deleteTodo(event) {
+  const item = event.target;
+
+  if (item.closest("button")?.classList[1] === "todo-btn--delete-task") {
+    const todo = event.target.parentElement.parentElement;
+    todo.remove();
+  }
+}
+
 // Event Listeners
 todoFormInputElement.addEventListener("keypress", function (event) {
   if (event.key === "enter") {
@@ -100,3 +109,4 @@ todoFormInputElement.addEventListener("keypress", function (event) {
   }
 });
 addTaskFormButtonElement.addEventListener("click", addTodoElement);
+todoListElement.addEventListener("click", deleteTodo);
