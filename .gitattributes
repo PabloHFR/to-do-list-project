@@ -1,3 +1,7 @@
 # Overrides Linguist default behaviour
 dist/* linguist-documentation=false
 dist/* linguist-vendored=false
+dist/css/* linguist-documentation=false
+dist/css/* linguist-vendored=false
+dist/js/* linguist-documentation=false
+dist/js/* linguist-vendored=false
